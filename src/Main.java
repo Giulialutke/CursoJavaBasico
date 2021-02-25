@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		exemploDadosDigitados();
+		quebradeLinha();
 
 	}
-	
+
 	public static void exemploDadosDigitados() {
 		Scanner sc = new Scanner(System.in);
 
@@ -22,7 +22,7 @@ public class Main {
 		System.out.println(y);
 		System.out.println(z);
 		sc.close();
-		
+
 	}
 
 	public static void exemplo() {
@@ -107,4 +107,69 @@ public class Main {
 
 		sc.close();
 	}
+
+	// Funcoes Matematicas 1
+	public static void funcoesMatematicas1() {
+		double x = 3.0;
+		double y = 4.0;
+		double z = -5.0;
+		double A, B, C;
+		A = Math.sqrt(x);
+		B = Math.sqrt(y);
+		C = Math.sqrt(25.0);
+		System.out.println("Raiz quadrada de " + x + " = " + A);
+		System.out.println("Raiz quadrada de " + y + " = " + B);
+		System.out.println("Raiz quadrada de 25 = " + C);
+		A = Math.pow(x, y);
+		B = Math.pow(x, 2.0);
+		C = Math.pow(5.0, 2.0);
+		System.out.println(x + " elevado a " + y + " = " + A);
+		System.out.println(x + " elevado ao quadrado = " + B);
+		System.out.println("5 elevado ao quadrado = " + C);
+		A = Math.abs(y);
+		B = Math.abs(z);
+		System.out.println("Valor absoluto de " + y + " = " + A);
+		System.out.println("Valor absoluto de " + z + " = " + B);
+
+	}
+
+	// fomula de Baskara
+	public static void forumaladeBaskara() {
+
+		double delta;
+		double a = 2;
+		double b = 10;
+		double c = 4;
+		double x1;
+		double x2;
+
+		delta = Math.pow(b, 2.0) - 4 * a * c;
+		x1 = (-b + Math.sqrt(delta)) / (2.0 * a);
+		x2 = (-b - Math.sqrt(delta)) / (2.0 * a);
+		System.out.println("delta" + "=" + delta);
+		System.out.println("Resultado1" + "=" + x1);
+		System.out.println("Resultado2" + "=" + x2);
+
+	}
+	// Quebradelinha
+
+	public static void quebradeLinha() {
+		Scanner sc = new Scanner(System.in);
+
+		int x;
+		String s1, s2, s3;
+
+		x = sc.nextInt();
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+
+		System.out.println("DADOS DIGITADOS:");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		sc.close();
+	}
+
 }
