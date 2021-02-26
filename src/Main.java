@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		quebradeLinha();
+		exercicio3();
 
 	}
 
@@ -172,4 +172,50 @@ public class Main {
 		sc.close();
 	}
 
-}
+	//Exercicios
+    // Exercicio1
+	
+	public static void exercicio1() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		double largura = sc.nextDouble();
+		double comprimento = sc.nextDouble();
+		double metroQuadrado = sc.nextDouble();
+		
+		double area = largura * comprimento;
+		double preco =  area * metroQuadrado;
+		
+		System.out.printf("AREA = %.2f%n", area);
+		System.out.printf("PRECO = %.2f%n", preco);
+		sc.close();
+	
+				
+		
+	}
+	
+	//Exercicio2
+	
+	public static void exercicio2() {
+	
+		Scanner sc = new Scanner (System.in);
+		
+		double entradax = sc.nextDouble();
+		double entraday = sc.nextDouble();
+		double entradax2 = sc.nextDouble();
+		double entraday2 = sc.nextDouble();
+		double entradax3 = sc.nextDouble();
+		double entraday3 = sc.nextDouble();
+		
+		double saida1 = entradax + entraday;
+		double saida2 = entradax2 + entraday2;
+		double saida3 = entradax3 + entraday3;
+		
+		System.out.println("Saida1 = " + saida1);
+		System.out.println("Saida2 = " +  saida2);
+		System.out.println("Saida3 = " +  saida3);
+		sc.close();		
+		
+				
+	}
+} 
