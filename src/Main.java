@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		exercicio3();
-
+		//codigopeca();
+				
 	}
 
 	public static void exemploDadosDigitados() {
@@ -59,12 +59,13 @@ public class Main {
 		double resultado;
 		a = 5;
 		b = 2;
-
+		
 		resultado = (double) a / b;
-		System.out.println(resultado);
+		System.out.println(resultado);	
+		
 	}
 
-	// Ler palavra apartir do teclado:
+// Ler palavra apartir do teclado:
 	public static void lerTeclado() {
 		Scanner sc = new Scanner(System.in);
 
@@ -75,7 +76,7 @@ public class Main {
 		sc.close();
 	}
 
-	// Ler numero teclado
+// Ler numero teclado
 	public static void lerNumeroTeclado() {
 		Scanner sc = new Scanner(System.in);
 
@@ -86,7 +87,7 @@ public class Main {
 		sc.close();
 	}
 
-	// Ler numero flutuante
+// Ler numero flutuante
 	public static void lerNumeroFlutuante() {
 		Scanner sc = new Scanner(System.in);
 
@@ -97,7 +98,7 @@ public class Main {
 		sc.close();
 	}
 
-	// Ler apenas primeira letra digiada
+// Ler apenas primeira letra digiada
 	public static void lerPrimeiraLetraDigitada() {
 		Scanner sc = new Scanner(System.in);
 
@@ -108,7 +109,7 @@ public class Main {
 		sc.close();
 	}
 
-	// Funcoes Matematicas 1
+// Funcoes Matematicas 1
 	public static void funcoesMatematicas1() {
 		double x = 3.0;
 		double y = 4.0;
@@ -133,7 +134,7 @@ public class Main {
 
 	}
 
-	// fomula de Baskara
+// fomula de Baskara
 	public static void forumaladeBaskara() {
 
 		double delta;
@@ -151,7 +152,7 @@ public class Main {
 		System.out.println("Resultado2" + "=" + x2);
 
 	}
-	// Quebradelinha
+// Quebradelinha
 
 	public static void quebradeLinha() {
 		Scanner sc = new Scanner(System.in);
@@ -172,50 +173,90 @@ public class Main {
 		sc.close();
 	}
 
-	//Exercicios
-    // Exercicio1
-	
+// Exercicios
+// Exercicio1
+
 	public static void exercicio1() {
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner (System.in);
-		
+		Scanner sc = new Scanner(System.in);
+
 		double largura = sc.nextDouble();
 		double comprimento = sc.nextDouble();
 		double metroQuadrado = sc.nextDouble();
-		
+
 		double area = largura * comprimento;
-		double preco =  area * metroQuadrado;
-		
+		double preco = area * metroQuadrado;
+
 		System.out.printf("AREA = %.2f%n", area);
-		System.out.printf("PRECO = %.2f%n", preco);
+		System.out.printf("PRECO = %.2f", preco);
 		sc.close();
-	
-				
-		
+
 	}
-	
-	//Exercicio2
-	
+
+// Exercicio2
+
 	public static void exercicio2() {
-	
-		Scanner sc = new Scanner (System.in);
-		
+
+		Scanner sc = new Scanner(System.in);
+
 		double entradax = sc.nextDouble();
 		double entraday = sc.nextDouble();
 		double entradax2 = sc.nextDouble();
 		double entraday2 = sc.nextDouble();
 		double entradax3 = sc.nextDouble();
 		double entraday3 = sc.nextDouble();
-		
+
 		double saida1 = entradax + entraday;
 		double saida2 = entradax2 + entraday2;
 		double saida3 = entradax3 + entraday3;
-		
+
 		System.out.println("Saida1 = " + saida1);
-		System.out.println("Saida2 = " +  saida2);
-		System.out.println("Saida3 = " +  saida3);
-		sc.close();		
-		
-				
+		System.out.println("Saida2 = " + saida2);
+		System.out.println("Saida3 = " + saida3);
+		sc.close();
+
 	}
-} 
+
+// Area
+
+	public static void area() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double pi = 3.14159;
+		double a = 2;
+		double raio = sc.nextDouble();
+		double area;
+
+		area = pi * Math.pow(raio, a);
+
+		System.out.printf("Area = %.4f", area);
+		sc.close();
+
+	}
+
+// Produto Diferença
+	public static void diferenca() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int d = sc.nextInt();
+		int dif;
+
+		dif = (a * b) - (c * d);
+		System.out.println("DIFERENÇA = " + dif);
+		sc.close();
+	}
+
+// Codigo peça
+	public static void codigopeca() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+
+}
