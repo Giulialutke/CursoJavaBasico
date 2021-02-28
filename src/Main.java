@@ -2,11 +2,10 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
-		//codigopeca();
-				
+	public static void main(String[] args) { 
+		horasTrabalhadas();
 	}
-
+	
 	public static void exemploDadosDigitados() {
 		Scanner sc = new Scanner(System.in);
 
@@ -59,10 +58,10 @@ public class Main {
 		double resultado;
 		a = 5;
 		b = 2;
-		
+
 		resultado = (double) a / b;
-		System.out.println(resultado);	
-		
+		System.out.println(resultado);
+
 	}
 
 // Ler palavra apartir do teclado:
@@ -251,12 +250,22 @@ public class Main {
 		sc.close();
 	}
 
-// Codigo peça
-	public static void codigopeca() {
+// Horas Trabalhadas
+
+	public static void horasTrabalhadas() {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		
+
+		double funcionario;
+		double qntfuncionario = sc.nextDouble();
+		double qnthorastrabalhadas = sc.nextDouble();
+		double valorhora = sc.nextDouble();
+
+		funcionario = qnthorastrabalhadas * valorhora;
+		System.out.println("Funcionario = " + qntfuncionario);
+		System.out.printf("Salario = U$%.2f", funcionario);
+		sc.close();
+
 	}
 
 }
