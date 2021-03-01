@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) { 
-		horasTrabalhadas();
+		pecas();
 	}
 	
 	public static void exemploDadosDigitados() {
@@ -267,5 +267,25 @@ public class Main {
 		sc.close();
 
 	}
-
-}
+	
+	//Peças
+	
+	public static void pecas() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double peca;
+		double cod1 = sc.nextDouble();
+		double qnt1 = sc.nextDouble();
+		double vl1 = sc.nextDouble ();
+		double cod2 = sc.nextDouble();
+		double qnt2 = sc.nextDouble();
+		double vl2 = sc.nextDouble ();
+				
+		peca = (qnt1 * vl1) + ( qnt2 * vl2);
+			
+		System.out.printf("Valor  Peça R$%.2f " , peca);
+		sc.close();
+	}
+		
+	}
