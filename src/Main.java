@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) { 
-		pecas();
+		geometria();
 	}
 	
 	public static void exemploDadosDigitados() {
@@ -287,5 +287,24 @@ public class Main {
 		System.out.printf("Valor  Peça R$%.2f " , peca);
 		sc.close();
 	}
+	
+	public static void geometria() {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double a, b,c;
+		
+		a = sc.nextDouble();
+		b = sc.nextDouble();
+		c = sc.nextDouble();
+		
+		System.out.printf("Triangulo Retângulo = %.3f%n", ((a * c) /2));
+		System.out.printf("Area circulo = %.3f%n", (3.14159 * Math.pow(c, 2.0)));
+	    System.out.printf("Area Trapezio = %.3f%n", ((a + b)/2 ) * c);
+	    System.out.printf("Area Quadrado = %.3f%n",  b * b);
+	    System.out.printf("Area Retangulo = %.3f", (a * b));
+	    sc.close(); 
+	    
 		
 	}
+}
