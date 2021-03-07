@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		exemploeslseif();
+		imparPar();
 	}
 
 	public static void exemploDadosDigitados() {
@@ -358,6 +358,39 @@ public class Main {
 			System.out.println("Boa noite");
 		}
 		sc.close();
+	}
+
+	// Exercicios estrutura de condicional
+
+	public static void numeronegativo() {
+		Scanner sc = new Scanner(System.in);
+		int numero;
+		numero = sc.nextInt();
+
+		if (numero < 0) {
+			System.out.println("Negativo");
+		} else {
+			System.out.println("Não Negativo");
+		}
+		sc.close();
+	}
+
+	// Numero impar ou par
+
+	public static void imparPar() {
+		Scanner sc = new Scanner(System.in);
+
+		int numero;
+		numero = sc.nextInt();
+
+		if (numero % 2 == 0) {
+			System.out.println("Par");
+		} else {
+			System.out.println("Impar");
+		}
+
+		sc.close();
+
 	}
 
 }
