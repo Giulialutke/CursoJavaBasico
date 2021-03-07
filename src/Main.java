@@ -2,10 +2,10 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) { 
-		geometria();
+	public static void main(String[] args) {
+		exemploeslseif();
 	}
-	
+
 	public static void exemploDadosDigitados() {
 		Scanner sc = new Scanner(System.in);
 
@@ -172,7 +172,6 @@ public class Main {
 		sc.close();
 	}
 
-// Exercicios
 // Exercicio1
 
 	public static void exercicio1() {
@@ -267,44 +266,98 @@ public class Main {
 		sc.close();
 
 	}
-	
-	//Peças
-	
+
+	// Peças
+
 	public static void pecas() {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
+
 		double peca;
 		double cod1 = sc.nextDouble();
 		double qnt1 = sc.nextDouble();
-		double vl1 = sc.nextDouble ();
+		double vl1 = sc.nextDouble();
 		double cod2 = sc.nextDouble();
 		double qnt2 = sc.nextDouble();
-		double vl2 = sc.nextDouble ();
-				
-		peca = (qnt1 * vl1) + ( qnt2 * vl2);
-			
-		System.out.printf("Valor  Peça R$%.2f " , peca);
+		double vl2 = sc.nextDouble();
+
+		peca = (qnt1 * vl1) + (qnt2 * vl2);
+
+		System.out.printf("Valor  Peça R$%.2f ", peca);
 		sc.close();
 	}
-	
+
+	// Geometria
+
 	public static void geometria() {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		
-		double a, b,c;
-		
+
+		double a, b, c;
+
 		a = sc.nextDouble();
 		b = sc.nextDouble();
 		c = sc.nextDouble();
-		
-		System.out.printf("Triangulo Retângulo = %.3f%n", ((a * c) /2));
+
+		System.out.printf("Triangulo Retângulo = %.3f%n", ((a * c) / 2));
 		System.out.printf("Area circulo = %.3f%n", (3.14159 * Math.pow(c, 2.0)));
-	    System.out.printf("Area Trapezio = %.3f%n", ((a + b)/2 ) * c);
-	    System.out.printf("Area Quadrado = %.3f%n",  b * b);
-	    System.out.printf("Area Retangulo = %.3f", (a * b));
-	    sc.close(); 
-	    
-		
+		System.out.printf("Area Trapezio = %.3f%n", ((a + b) / 2) * c);
+		System.out.printf("Area Quadrado = %.3f%n", b * b);
+		System.out.printf("Area Retangulo = %.3f", (a * b));
+		sc.close();
+
+		// Exemplo IF
+
 	}
+
+	public static void exemploif() {
+
+		int x = 5;
+
+		System.out.println("Bom dia");
+
+		if (x < 0) {
+			System.out.println("Boa tarde");
+		}
+
+		System.out.println("Boa noite");
+	}
+
+	// Exemploelse
+
+	public static void exemploeslse() {
+		Scanner sc = new Scanner(System.in);
+		int hora;
+
+		System.out.println("Quantas horas?");
+		hora = sc.nextInt();
+
+		if (hora < 12) {
+			System.out.println("Bom dia");
+		}
+
+		else {
+			System.out.println("Boa tarde");
+		}
+		sc.close();
+	}
+	// Exemplo encadeamento de estruturas condições
+
+	public static void exemploeslseif() {
+		Scanner sc = new Scanner(System.in);
+		int hora;
+
+		System.out.println("Quantas horas?");
+		hora = sc.nextInt();
+
+		if (hora < 12) {
+			System.out.println("Bom dia");
+		} else if (hora < 18) {
+			System.out.println("Boa tarde");
+		} else {
+			System.out.println("Boa noite");
+		}
+		sc.close();
+	}
+
 }
