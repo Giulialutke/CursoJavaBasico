@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		codigo();
+		impares();
 	}
 
 	public static void enquanto() {
@@ -85,16 +85,32 @@ public class Repeticao {
 			if (opc == 1) {
 				a = a + 1;
 			} else if (opc == 2) {
-				 g = g + 1;
+				g = g + 1;
 			} else if (opc == 3) {
-				d = d + 1 ;
+				d = d + 1;
 			}
 			opc = sc.nextInt();
 		}
 		System.out.println("Muito Obrigado");
 		System.out.println("Alcool: " + a);
 		System.out.println("Gasolina: " + g);
-        System.out.println("Diesel: " + d );
+		System.out.println("Diesel: " + d);
 		sc.close();
 	}
+
+	public static void impares() {
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+
+		for (int i = 1; i <= x; i ++) {
+			if (i % 2 != 0) {
+				System.out.println(i);
+			}
+			
+		}
+
+		sc.close();
+	}
+
 }
