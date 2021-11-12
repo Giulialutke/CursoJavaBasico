@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		impares();
+		sequencia();
 	}
 
 	public static void enquanto() {
@@ -103,14 +103,27 @@ public class Repeticao {
 
 		int x = sc.nextInt();
 
-		for (int i = 1; i <= x; i ++) {
+		for (int i = 1; i <= x; i++) {
 			if (i % 2 != 0) {
 				System.out.println(i);
 			}
-			
+
 		}
 
 		sc.close();
 	}
 
+	public static void sequencia() {
+		Scanner sc = new Scanner(System.in);
+
+		for (int i = 10;i >= 1; i--) {
+			System.out.println(i);
+
+	}
+
+		sc.close();
+	}
 }
+
+
+	
