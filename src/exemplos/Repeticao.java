@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		numeracao1();
+		façaenquanto();
 	}
 
 	public static void enquanto() {
@@ -166,6 +166,25 @@ public class Repeticao {
 				System.out.println("Esse numero não é 2 nem 7");
 			}
 		}
+
+		sc.close();
+	}
+
+	public static void façaenquanto() {
+		Scanner sc = new Scanner(System.in);
+		
+		char resp;
+		
+		do {
+			System.out.println("Digite a temperatua em Celcius: ");
+			double C = sc.nextDouble();
+			double F = 9.0 * C / 5.0 + 32.0;
+			System.out.printf("Equivalente em Fahrenheit: %.2f%n", F);
+			System.out.println("Deseja repetir (s/n)?");
+			resp = sc.next().charAt(0);
+
+		} while (resp != 'n');
+	
 
 		sc.close();
 	}
