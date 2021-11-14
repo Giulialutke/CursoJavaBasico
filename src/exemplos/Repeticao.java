@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		sequencia5em5();
+		numeracao1();
 	}
 
 	public static void enquanto() {
@@ -127,9 +127,44 @@ public class Repeticao {
 	public static void sequencia5em5() {
 		Scanner sc = new Scanner(System.in);
 
-			for (int i = 0 ; i <= 20; i += 5) {
+		for (int i = 0; i <= 20; i += 5) {
 			System.out.println(i);
 
+		}
+
+		sc.close();
+	}
+
+	public static void numeracao() {
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+
+		for (int i = 1; i <= x; i++) {
+			// || = ou
+
+			if (i == 2 || i == 7) {
+				System.out.println(i);
+			}
+		}
+
+		sc.close();
+
+	}
+
+	public static void numeracao1() {
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+
+		for (int i = 1; i <= x; i++) {
+			// || = ou
+
+			if (i == 2 || i == 7) {
+				System.out.println(i);
+			} else {
+				System.out.println("Esse numero não é 2 nem 7");
+			}
 		}
 
 		sc.close();
