@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		façaenquanto();
+		bitwise2();
 	}
 
 	public static void enquanto() {
@@ -172,9 +172,9 @@ public class Repeticao {
 
 	public static void façaenquanto() {
 		Scanner sc = new Scanner(System.in);
-		
+
 		char resp;
-		
+
 		do {
 			System.out.println("Digite a temperatua em Celcius: ");
 			double C = sc.nextDouble();
@@ -184,8 +184,33 @@ public class Repeticao {
 			resp = sc.next().charAt(0);
 
 		} while (resp != 'n');
-	
 
+		sc.close();
+	}
+
+	public static void bitwise() {
+		Scanner sc = new Scanner(System.in);
+
+		int n1 = 89;
+		int n2 = 60;
+		System.out.println(n1 & n2);
+		System.out.println(n1 | n2);
+		System.out.println(n1 ^ n2);
+
+		sc.close();
+
+	}
+
+	public static void bitwise2() {
+		Scanner sc = new Scanner(System.in);
+
+		int mask = 0b100000;
+		int n = sc.nextInt();
+		if ((n & mask) != 0) {
+			System.out.println("6th bit is true!");
+		} else {
+			System.out.println("6th bit is false");
+		}
 		sc.close();
 	}
 }
