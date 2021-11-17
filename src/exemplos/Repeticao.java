@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Repeticao {
 	public static void main(String[] args) {
-		split();
+		sintaxe();
 	}
 
 	public static void enquanto() {
@@ -247,10 +247,33 @@ public class Repeticao {
 		String s = "potato apple lemon ";
 		String[] vect = s.split(" ");
 
-			
 		System.out.println(vect[0]);
 		System.out.println(vect[1]);
 		System.out.println(vect[2]);
 
+	}
+
+	public static void sintaxe() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter three numbers:");
+
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+
+		if (a > b && a > c) {
+			System.out.println("Higher = " + a);
+		}
+
+		else if (b > c) {
+			System.out.println("Higher = " + b);
+		}
+
+		else {
+			System.out.println("Higher = " + c);
+		}
+
+		sc.close();
 	}
 }
